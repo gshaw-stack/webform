@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+
+<script src="https://ability-energy-9296-dev-ed.scratch.my.site.com/lightning/lightning.out.js"></script>
+
+<div data-lightning-out="true"></div>
+
+<script>
+	const appName = 'c:quoteRequestWebformApp';
+	const componentName = 'c:quoteRequestWebform';
+	const lightningEndpoint = 'https://ability-energy-9296-dev-ed.scratch.my.site.com';
+	const targetElement = document.querySelector("[data-lightning-out]");
+	const componentAttributes = {
+	};
+
+	$Lightning.use(
+		appName,
+		function() {
+			$Lightning.createComponent(
+				componentName,
+				componentAttribute,
+				targetElement,
+				function (cmp) {
+					console.log('lightning component created.');
+				}
+			);
+		},
+		lightningEndpoint
+	);
+
+</script>
+</html>
